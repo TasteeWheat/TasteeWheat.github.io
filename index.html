@@ -1,18 +1,262 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John Hasson — Entrepreneur, Software Engineer &amp; Investor</title>
+  <meta name="description" content="John Hasson is an entrepreneur and software engineer who has been programming since 1984. He runs Hawthorne LLC and builds CoCallers, an AI voice receptionist platform for property management and contractors." />
+  <meta name="author" content="John Hasson" />
+  <link rel="canonical" href="https://johnhasson.com/" />
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="John Hasson — Entrepreneur, Software Engineer & Investor" />
+  <meta property="og:description" content="Programming since 1984. Building AI for real-world businesses through Hawthorne LLC and CoCallers." />
+  <meta property="og:url" content="https://johnhasson.com/" />
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/&gt;&lt;text x=%2250%22 y=%2268%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22&gt;JH&lt;/text&gt;&lt;/svg&gt;" />
 
-      <div class="entry">
-        {{ post.excerpt }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "John Hasson",
+    "url": "https://johnhasson.com",
+    "jobTitle": "Entrepreneur & Software Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Folsom", "addressRegion": "CA", "addressCountry": "US" },
+    "email": "john@johnhasson.com",
+    "knowsAbout": ["Artificial Intelligence", "Software Engineering", "Automation", "Quantitative Investing", "Options Trading", "Application Security"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hawthorne LLC",
+      "brand": { "@type": "Brand", "name": "CoCallers" }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/">John&nbsp;Hasson</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise" class="hide-sm">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Entrepreneur · Engineer · Investor</span>
+      <h1>John Hasson</h1>
+      <p class="lead">
+        I've been writing software since 1984. Since then I've shipped products,
+        worked the Y2K remediation effort, traded the markets, researched security,
+        and spoken at industry conferences. Today I run <strong>Hawthorne&nbsp;LLC</strong>
+        and build <strong>CoCallers</strong> — AI that answers the phone for real-world businesses.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="prose">
+          <p class="kicker">About</p>
+          <h2 style="font-size:clamp(1.6rem,3.4vw,2.1rem);letter-spacing:-.02em;margin:0 0 18px;font-weight:800;">Four decades of building things that ship.</h2>
+          <p>
+            John Hasson is an entrepreneur and software engineer based in Folsom, California.
+            He started programming in 1984 and never stopped — a career arc that runs from
+            early personal computing, through the Y2K remediation era, to today's
+            generative-AI boom.
+          </p>
+          <p>
+            He works across an unusually wide range: designing autonomous AI agents and
+            automation systems, building and shipping production software, researching the
+            quantitative side of the markets (equities and options), and digging into
+            application security. The common thread is a builder's bias — take something
+            complicated and turn it into a tool people can actually use.
+          </p>
+          <p>
+            Through <strong>Hawthorne&nbsp;LLC</strong>, he builds <strong>CoCallers</strong>,
+            an AI voice receptionist platform for property management and contractors. He has
+            also spoken at industry conferences and continues to invest in and tinker with
+            emerging technology.
+          </p>
+        </div>
+        <aside>
+          <ul class="facts">
+            <li><span class="k">Based</span><span>Folsom, California</span></li>
+            <li><span class="k">Coding since</span><span>1984</span></li>
+            <li><span class="k">Focus</span><span>AI · Automation · Markets · Security</span></li>
+            <li><span class="k">Building</span><span>CoCallers (Hawthorne LLC)</span></li>
+            <li><span class="k">Contact</span><span><a href="mailto:john@johnhasson.com">john@johnhasson.com</a></span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise" class="section-soft">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">What I do</p>
+        <h2>A generalist's toolkit.</h2>
+        <p>Decades of hands-on work across software, AI, markets, and security.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="ico">🤖</div>
+          <h3>AI &amp; Automation</h3>
+          <p>Designing and shipping AI agents, voice systems, and automation that handle real work for real businesses.</p>
+        </div>
+        <div class="card">
+          <div class="ico">💻</div>
+          <h3>Software Engineering</h3>
+          <p>Programming since 1984 — from low-level systems and Y2K remediation to modern, cloud-native applications.</p>
+        </div>
+        <div class="card">
+          <div class="ico">📈</div>
+          <h3>Markets &amp; Options</h3>
+          <p>Quantitative investing and options strategy: data-driven research into equities, volatility, and derivatives.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🛡️</div>
+          <h3>Security Research</h3>
+          <p>A long-standing interest in application and platform security, and in building systems that hold up under pressure.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🚀</div>
+          <h3>Entrepreneurship</h3>
+          <p>Founding and operating companies — turning prototypes into products and products into businesses.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🎤</div>
+          <h3>Speaking</h3>
+          <p>Sharing what I've learned with technical audiences at industry conferences and events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Projects</p>
+        <h2>What I'm building.</h2>
+        <p>Current ventures and selected work.</p>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <!-- Featured: CoCallers -->
+      <div class="project">
+        <div class="body">
+          <span class="tag">Featured · Hawthorne LLC</span>
+          <h3>CoCallers</h3>
+          <p>
+            An AI voice receptionist and business platform built for property management
+            companies and contractors. CoCallers answers calls, books appointments, sends
+            SMS notifications, and automates the busywork — so teams never miss a customer.
+          </p>
+          <div class="chips">
+            <span class="chip">AI Voice</span>
+            <span class="chip">Call Handling</span>
+            <span class="chip">SMS Notifications</span>
+            <span class="chip">Booking</span>
+            <span class="chip">CRM Automation</span>
+          </div>
+          <p style="margin-top:22px;">
+            <a class="btn btn-primary" href="https://cocallers.com" target="_blank" rel="noopener">Visit CoCallers →</a>
+          </p>
+        </div>
+        <div class="panel">
+          <div class="panel-title">Built for the front desk that never sleeps</div>
+          <ul>
+            <li>Intelligent, natural call handling</li>
+            <li>Appointment booking &amp; scheduling</li>
+            <li>Opt-in SMS updates &amp; reminders</li>
+            <li>CRM &amp; workflow automation</li>
+            <li>Designed for property management &amp; trades</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Secondary projects -->
+      <div class="grid grid-3" style="margin-top:24px;">
+        <div class="card">
+          <div class="ico">🏢</div>
+          <h3>Hawthorne LLC</h3>
+          <p>The company behind CoCallers — the operating entity for my product and software work.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🧩</div>
+          <h3>Clunk</h3>
+          <p>An independent project in active development. More details soon.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🐙</div>
+          <h3>Open Source &amp; Code</h3>
+          <p>Experiments and code on GitHub. <a href="https://github.com/TasteeWheat" target="_blank" rel="noopener">github.com/TasteeWheat</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS STATEMENT (compliance / TCR) -->
+  <section id="business" class="section-soft">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Business</p>
+        <h2>Hawthorne LLC &amp; CoCallers.</h2>
+      </div>
+      <div class="callout">
+        <p>
+          <strong>Hawthorne LLC operates CoCallers, an AI voice receptionist platform for
+          property management and contractors.</strong> We provide intelligent call handling,
+          SMS notifications, booking, and CRM automation services. Messaging is strictly
+          opt-in, and we never sell or share customer mobile information with third parties
+          for marketing. See our <a href="privacy.html">Privacy Policy</a> for details.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Let's talk.</h2>
+        <p>Questions about CoCallers, a project, or just want to connect? I'd be glad to hear from you.</p>
+        <a class="btn btn-primary" href="mailto:john@johnhasson.com">john@johnhasson.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="yr">2026</span> John Hasson · Hawthorne LLC. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:john@johnhasson.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
