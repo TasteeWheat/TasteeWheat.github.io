@@ -260,3 +260,34 @@ section { padding: 72px 0; }
 .legal li { margin: 8px 0; }
 .legal a { word-break: break-word; }
 .back-link { display: inline-block; margin-top: 40px; font-weight: 600; }
+
+/* ---------- Hero music aside (top-right) ---------- */
+.hero-row { display: flex; gap: 48px; align-items: flex-start; justify-content: space-between; }
+.hero-main { flex: 1 1 auto; min-width: 0; max-width: 720px; }
+.hero-music {
+  flex: 0 0 270px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  margin-top: 4px;
+}
+.hm-eyebrow { font-size: .76rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+.hm-text { font-size: .9rem; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.5; }
+.hm-links { display: flex; gap: 10px; }
+.hm-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  display: grid; place-items: center;
+  background: var(--bg-soft); border: 1px solid var(--line); color: var(--ink-soft);
+  transition: transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+}
+.hm-icon svg { width: 20px; height: 20px; fill: currentColor; }
+.hm-icon:hover { transform: translateY(-2px); border-color: transparent; color: #fff; text-decoration: none; }
+.hm-icon.sp:hover { background: #1DB954; }
+.hm-icon.ym:hover { background: #FF0000; }
+.hm-icon.am:hover { background: #FA243C; }
+@media (max-width: 860px) {
+  .hero-row { flex-direction: column; gap: 28px; }
+  .hero-music { flex-basis: auto; width: 100%; max-width: 380px; }
+}
